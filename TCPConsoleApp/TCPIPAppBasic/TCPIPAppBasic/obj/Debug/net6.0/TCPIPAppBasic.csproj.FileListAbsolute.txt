@@ -1,0 +1,15 @@
+C:\Users\nonthanadol\Desktop\C#\TCPIPAppBasic\TCPIPAppBasic\obj\Debug\net6.0\TCPIPAppBasic.csproj.AssemblyReference.cache
+C:\Users\nonthanadol\Desktop\C#\TCPIPAppBasic\TCPIPAppBasic\obj\Debug\net6.0\TCPIPAppBasic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nonthanadol\Desktop\C#\TCPIPAppBasic\TCPIPAppBasic\obj\Debug\net6.0\TCPIPAppBasic.AssemblyInfoInputs.cache
+C:\Users\nonthanadol\Desktop\C#\TCPIPAppBasic\TCPIPAppBasic\obj\Debug\net6.0\TCPIPAppBasic.AssemblyInfo.cs
+C:\Users\nonthanadol\Desktop\C#\TCPIPAppBasic\TCPIPAppBasic\obj\Debug\net6.0\TCPIPAppBasic.csproj.CoreCompileInputs.cache
+C:\Users\nonthanadol\Desktop\C#\TCPIPAppBasic\TCPIPAppBasic\bin\Debug\net6.0\TCPIPAppBasic.exe
+C:\Users\nonthanadol\Desktop\C#\TCPIPAppBasic\TCPIPAppBasic\bin\Debug\net6.0\TCPIPAppBasic.deps.json
+C:\Users\nonthanadol\Desktop\C#\TCPIPAppBasic\TCPIPAppBasic\bin\Debug\net6.0\TCPIPAppBasic.runtimeconfig.json
+C:\Users\nonthanadol\Desktop\C#\TCPIPAppBasic\TCPIPAppBasic\bin\Debug\net6.0\TCPIPAppBasic.dll
+C:\Users\nonthanadol\Desktop\C#\TCPIPAppBasic\TCPIPAppBasic\bin\Debug\net6.0\TCPIPAppBasic.pdb
+C:\Users\nonthanadol\Desktop\C#\TCPIPAppBasic\TCPIPAppBasic\obj\Debug\net6.0\TCPIPAppBasic.dll
+C:\Users\nonthanadol\Desktop\C#\TCPIPAppBasic\TCPIPAppBasic\obj\Debug\net6.0\refint\TCPIPAppBasic.dll
+C:\Users\nonthanadol\Desktop\C#\TCPIPAppBasic\TCPIPAppBasic\obj\Debug\net6.0\TCPIPAppBasic.pdb
+C:\Users\nonthanadol\Desktop\C#\TCPIPAppBasic\TCPIPAppBasic\obj\Debug\net6.0\TCPIPAppBasic.genruntimeconfig.cache
+C:\Users\nonthanadol\Desktop\C#\TCPIPAppBasic\TCPIPAppBasic\obj\Debug\net6.0\ref\TCPIPAppBasic.dll

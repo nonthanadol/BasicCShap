@@ -1,0 +1,15 @@
+C:\Users\nonthanadol\Desktop\C#\TCPAppClient\TCPAppClient\bin\Debug\net6.0\TCPAppClient.exe
+C:\Users\nonthanadol\Desktop\C#\TCPAppClient\TCPAppClient\bin\Debug\net6.0\TCPAppClient.deps.json
+C:\Users\nonthanadol\Desktop\C#\TCPAppClient\TCPAppClient\bin\Debug\net6.0\TCPAppClient.runtimeconfig.json
+C:\Users\nonthanadol\Desktop\C#\TCPAppClient\TCPAppClient\bin\Debug\net6.0\TCPAppClient.dll
+C:\Users\nonthanadol\Desktop\C#\TCPAppClient\TCPAppClient\bin\Debug\net6.0\TCPAppClient.pdb
+C:\Users\nonthanadol\Desktop\C#\TCPAppClient\TCPAppClient\obj\Debug\net6.0\TCPAppClient.csproj.AssemblyReference.cache
+C:\Users\nonthanadol\Desktop\C#\TCPAppClient\TCPAppClient\obj\Debug\net6.0\TCPAppClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nonthanadol\Desktop\C#\TCPAppClient\TCPAppClient\obj\Debug\net6.0\TCPAppClient.AssemblyInfoInputs.cache
+C:\Users\nonthanadol\Desktop\C#\TCPAppClient\TCPAppClient\obj\Debug\net6.0\TCPAppClient.AssemblyInfo.cs
+C:\Users\nonthanadol\Desktop\C#\TCPAppClient\TCPAppClient\obj\Debug\net6.0\TCPAppClient.csproj.CoreCompileInputs.cache
+C:\Users\nonthanadol\Desktop\C#\TCPAppClient\TCPAppClient\obj\Debug\net6.0\TCPAppClient.dll
+C:\Users\nonthanadol\Desktop\C#\TCPAppClient\TCPAppClient\obj\Debug\net6.0\refint\TCPAppClient.dll
+C:\Users\nonthanadol\Desktop\C#\TCPAppClient\TCPAppClient\obj\Debug\net6.0\TCPAppClient.pdb
+C:\Users\nonthanadol\Desktop\C#\TCPAppClient\TCPAppClient\obj\Debug\net6.0\TCPAppClient.genruntimeconfig.cache
+C:\Users\nonthanadol\Desktop\C#\TCPAppClient\TCPAppClient\obj\Debug\net6.0\ref\TCPAppClient.dll
