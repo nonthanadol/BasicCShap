@@ -1,0 +1,6 @@
+C:\Users\nonthanadol\Desktop\C#\Test485\obj\Debug\Test485.csproj.AssemblyReference.cache
+C:\Users\nonthanadol\Desktop\C#\Test485\obj\Debug\Test485.csproj.SuggestedBindingRedirects.cache
+C:\Users\nonthanadol\Desktop\C#\Test485\obj\Debug\Test485.Form1.resources
+C:\Users\nonthanadol\Desktop\C#\Test485\obj\Debug\Test485.Properties.Resources.resources
+C:\Users\nonthanadol\Desktop\C#\Test485\obj\Debug\Test485.csproj.GenerateResource.cache
+C:\Users\nonthanadol\Desktop\C#\Test485\obj\Debug\Test485.csproj.CoreCompileInputs.cache
