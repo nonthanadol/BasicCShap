@@ -1,0 +1,15 @@
+C:\Users\nonthanadol\Desktop\C#\Tutorial\bin\Debug\net6.0\Tutorial.exe
+C:\Users\nonthanadol\Desktop\C#\Tutorial\bin\Debug\net6.0\Tutorial.deps.json
+C:\Users\nonthanadol\Desktop\C#\Tutorial\bin\Debug\net6.0\Tutorial.runtimeconfig.json
+C:\Users\nonthanadol\Desktop\C#\Tutorial\bin\Debug\net6.0\Tutorial.dll
+C:\Users\nonthanadol\Desktop\C#\Tutorial\bin\Debug\net6.0\Tutorial.pdb
+C:\Users\nonthanadol\Desktop\C#\Tutorial\obj\Debug\net6.0\Tutorial.csproj.AssemblyReference.cache
+C:\Users\nonthanadol\Desktop\C#\Tutorial\obj\Debug\net6.0\Tutorial.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nonthanadol\Desktop\C#\Tutorial\obj\Debug\net6.0\Tutorial.AssemblyInfoInputs.cache
+C:\Users\nonthanadol\Desktop\C#\Tutorial\obj\Debug\net6.0\Tutorial.AssemblyInfo.cs
+C:\Users\nonthanadol\Desktop\C#\Tutorial\obj\Debug\net6.0\Tutorial.csproj.CoreCompileInputs.cache
+C:\Users\nonthanadol\Desktop\C#\Tutorial\obj\Debug\net6.0\Tutorial.dll
+C:\Users\nonthanadol\Desktop\C#\Tutorial\obj\Debug\net6.0\refint\Tutorial.dll
+C:\Users\nonthanadol\Desktop\C#\Tutorial\obj\Debug\net6.0\Tutorial.pdb
+C:\Users\nonthanadol\Desktop\C#\Tutorial\obj\Debug\net6.0\Tutorial.genruntimeconfig.cache
+C:\Users\nonthanadol\Desktop\C#\Tutorial\obj\Debug\net6.0\ref\Tutorial.dll
