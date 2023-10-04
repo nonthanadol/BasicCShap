@@ -1,0 +1,45 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Prototype_App.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="InterfaceID" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="URL" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="IPAddress" Type="System.String" Scope="User">
+      <Value Profile="(Default)">192.168.1.10</Value>
+    </Setting>
+    <Setting Name="Dstatus" Type="System.String" Scope="User">
+      <Value Profile="(Default)">4097</Value>
+    </Setting>
+    <Setting Name="DstatusCode" Type="System.String" Scope="User">
+      <Value Profile="(Default)">4098</Value>
+    </Setting>
+    <Setting Name="DpassQty" Type="System.String" Scope="User">
+      <Value Profile="(Default)">4099</Value>
+    </Setting>
+    <Setting Name="DfailQty" Type="System.String" Scope="User">
+      <Value Profile="(Default)">4100</Value>
+    </Setting>
+    <Setting Name="DerrorCnt" Type="System.String" Scope="User">
+      <Value Profile="(Default)">4101</Value>
+    </Setting>
+    <Setting Name="DselfCheck" Type="System.String" Scope="User">
+      <Value Profile="(Default)">4102</Value>
+    </Setting>
+    <Setting Name="DCycleTime" Type="System.String" Scope="User">
+      <Value Profile="(Default)">4110</Value>
+    </Setting>
+    <Setting Name="DRunningTime" Type="System.String" Scope="User">
+      <Value Profile="(Default)">4112</Value>
+    </Setting>
+    <Setting Name="DWaitingTime" Type="System.String" Scope="User">
+      <Value Profile="(Default)">4114</Value>
+    </Setting>
+    <Setting Name="DerrTime" Type="System.String" Scope="User">
+      <Value Profile="(Default)">4116</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
