@@ -68,6 +68,7 @@
             this.lbValueErrTime = new System.Windows.Forms.Label();
             this.lbMonitorStatus = new System.Windows.Forms.Label();
             this.UpdateUI = new System.Windows.Forms.Timer(this.components);
+            this.UpdatePQM = new System.Windows.Forms.Timer(this.components);
             this.titlePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.controlPanel.SuspendLayout();
@@ -137,7 +138,7 @@
             // btnPLCSetting
             // 
             this.btnPLCSetting.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPLCSetting.Location = new System.Drawing.Point(260, 23);
+            this.btnPLCSetting.Location = new System.Drawing.Point(170, 23);
             this.btnPLCSetting.Name = "btnPLCSetting";
             this.btnPLCSetting.Size = new System.Drawing.Size(95, 42);
             this.btnPLCSetting.TabIndex = 2;
@@ -148,7 +149,7 @@
             // btnPQMSetting
             // 
             this.btnPQMSetting.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPQMSetting.Location = new System.Drawing.Point(159, 23);
+            this.btnPQMSetting.Location = new System.Drawing.Point(271, 23);
             this.btnPQMSetting.Name = "btnPQMSetting";
             this.btnPQMSetting.Size = new System.Drawing.Size(95, 42);
             this.btnPQMSetting.TabIndex = 1;
@@ -216,7 +217,7 @@
             this.tblStatusMonitorPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tblStatusMonitorPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tblStatusMonitorPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tblStatusMonitorPanel.Size = new System.Drawing.Size(207, 526);
+            this.tblStatusMonitorPanel.Size = new System.Drawing.Size(207, 531);
             this.tblStatusMonitorPanel.TabIndex = 3;
             // 
             // lbBarcode
@@ -547,6 +548,11 @@
             this.UpdateUI.Interval = 500;
             this.UpdateUI.Tick += new System.EventHandler(this.UpdateUI_Tick);
             // 
+            // UpdatePQM
+            // 
+            this.UpdatePQM.Interval = 2000;
+            this.UpdatePQM.Tick += new System.EventHandler(this.UpdatePQM_Tick);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -611,6 +617,7 @@
         private System.Windows.Forms.Label lbBarcode;
         private System.Windows.Forms.Label lbValueBarcode;
         private System.Windows.Forms.Timer UpdateUI;
+        private System.Windows.Forms.Timer UpdatePQM;
     }
 }
 

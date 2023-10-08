@@ -25,7 +25,7 @@ namespace Prototype_App.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("H12345678")]
         public string InterfaceID {
             get {
                 return ((string)(this["InterfaceID"]));
@@ -37,7 +37,7 @@ namespace Prototype_App.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://10.150.192.17:8090/sensordata?sensorId=UploadMachineData")]
         public string URL {
             get {
                 return ((string)(this["URL"]));
@@ -134,36 +134,36 @@ namespace Prototype_App.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("4110")]
-        public string DCycleTime {
+        public string DcycleTime {
             get {
-                return ((string)(this["DCycleTime"]));
+                return ((string)(this["DcycleTime"]));
             }
             set {
-                this["DCycleTime"] = value;
+                this["DcycleTime"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("4112")]
-        public string DRunningTime {
+        public string DrunningTime {
             get {
-                return ((string)(this["DRunningTime"]));
+                return ((string)(this["DrunningTime"]));
             }
             set {
-                this["DRunningTime"] = value;
+                this["DrunningTime"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("4114")]
-        public string DWaitingTime {
+        public string DwaitingTime {
             get {
-                return ((string)(this["DWaitingTime"]));
+                return ((string)(this["DwaitingTime"]));
             }
             set {
-                this["DWaitingTime"] = value;
+                this["DwaitingTime"] = value;
             }
         }
         
@@ -176,6 +176,30 @@ namespace Prototype_App.Properties {
             }
             set {
                 this["DerrTime"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("4120")]
+        public string Dbarcode {
+            get {
+                return ((string)(this["Dbarcode"]));
+            }
+            set {
+                this["Dbarcode"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool EnableMES {
+            get {
+                return ((bool)(this["EnableMES"]));
+            }
+            set {
+                this["EnableMES"] = value;
             }
         }
     }

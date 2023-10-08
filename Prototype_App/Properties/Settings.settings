@@ -3,10 +3,10 @@
   <Profiles />
   <Settings>
     <Setting Name="InterfaceID" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">H12345678</Value>
     </Setting>
     <Setting Name="URL" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">http://10.150.192.17:8090/sensordata?sensorId=UploadMachineData</Value>
     </Setting>
     <Setting Name="IPAddress" Type="System.String" Scope="User">
       <Value Profile="(Default)">192.168.1.10</Value>
@@ -29,17 +29,23 @@
     <Setting Name="DselfCheck" Type="System.String" Scope="User">
       <Value Profile="(Default)">4102</Value>
     </Setting>
-    <Setting Name="DCycleTime" Type="System.String" Scope="User">
+    <Setting Name="DcycleTime" Type="System.String" Scope="User">
       <Value Profile="(Default)">4110</Value>
     </Setting>
-    <Setting Name="DRunningTime" Type="System.String" Scope="User">
+    <Setting Name="DrunningTime" Type="System.String" Scope="User">
       <Value Profile="(Default)">4112</Value>
     </Setting>
-    <Setting Name="DWaitingTime" Type="System.String" Scope="User">
+    <Setting Name="DwaitingTime" Type="System.String" Scope="User">
       <Value Profile="(Default)">4114</Value>
     </Setting>
     <Setting Name="DerrTime" Type="System.String" Scope="User">
       <Value Profile="(Default)">4116</Value>
+    </Setting>
+    <Setting Name="Dbarcode" Type="System.String" Scope="User">
+      <Value Profile="(Default)">4120</Value>
+    </Setting>
+    <Setting Name="EnableMES" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
     </Setting>
   </Settings>
 </SettingsFile>

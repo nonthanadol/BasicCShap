@@ -17,31 +17,82 @@ namespace Prototype_App
         ModbusClient _modbus = new ModbusClient();
         iVariableShare _Common = new iVariableShare();
         clsTool _Tool = new clsTool();
+       
+        int[] status;
+        int[] statusCode;
+        int[] passQty;
+        int[] failQty;
+        int[] errorCnt;
+        int[] selfCheck;
+        int[] cycleTime;
+        int[] RunningTime;
+        int[] WaitingTime;
+        int[] errTime;
+        int[] raw_Barcode;
+        string Barcode;
 
-        private Thread _readThread;
+        private Thread _readThread;      
+        private bool isThreadRunning;
 
 
         public clsPLC(iVariableShare common)
         {
+            isThreadRunning = false;
+
             _Common = common;
             _readThread = new Thread(ReadStatusThread);
             _readThread.Name = "readStatusThread";
         }
 
-        public void callReadStatusThread() { _readThread.Start(); }
+        public void callReadStatusThread() 
+        {
+            try 
+            {
+                if (!isThreadRunning)
+                {
+                    _readThread.Start();
+                    isThreadRunning = true;
+                   
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error in callReadStatusThread: {ex.Message}");
+            }
+
+
+        }
+
+        public void StopReadStatusThread()
+        {
+            if (isThreadRunning)
+            {
+                _readThread.Abort(); // You may want to use a safer way to stop the thread.
+                isThreadRunning = false;
+               
+            }
+        }
+
         public void ReadStatusThread()
         {
             //_readThread.Start();
-            while (_readThread.IsAlive) 
+            while (isThreadRunning) 
             {
-                if (_modbus.Connected == true)
+                try
                 {
-                    readRegister();
+                    if (_modbus.Connected == true)
+                    {
+                        readRegister();
+                    }
+                    else
+                    {
+                        StopReadStatusThread();
+                    }
                 }
-                else
+                catch (ThreadAbortException)
                 {
-                    _readThread.Abort();
-                    break;
+                    
                 }
                 Thread.Sleep(500);
             }        
@@ -84,9 +135,8 @@ namespace Prototype_App
         public void disconnectPLC()
         {
 
-            _modbus.Disconnect();
+            _modbus.Disconnect();           
             _Common.iPLCconnectStatus = "Disconnect!!";
-            
 
         }
         public void readRegister()
@@ -98,17 +148,25 @@ namespace Prototype_App
                 {
 
                     //bool[] X = obj_modbus.ReadDiscreteInputs(1025, 2); // ReadCoils(1025, 2);
-                    int[] status = _modbus.ReadHoldingRegisters(Convert.ToInt32(Properties.Settings.Default.Dstatus), 1);
-                    int[] statusCode = _modbus.ReadHoldingRegisters(Convert.ToInt32(Properties.Settings.Default.DstatusCode), 1);
-                    int[] passQty = _modbus.ReadHoldingRegisters(Convert.ToInt32(Properties.Settings.Default.DpassQty), 1);
-                    int[] failQty = _modbus.ReadHoldingRegisters(Convert.ToInt32(Properties.Settings.Default.DfailQty), 1);
-                    int[] errorCnt = _modbus.ReadHoldingRegisters(Convert.ToInt32(Properties.Settings.Default.DerrorCnt), 1);
-                    int[] selfCheck = _modbus.ReadHoldingRegisters(Convert.ToInt32(Properties.Settings.Default.DselfCheck), 1);
-                    int[] cycleTime = _modbus.ReadHoldingRegisters(Convert.ToInt32(Properties.Settings.Default.DCycleTime), 2);
-                    int[] RunningTime = _modbus.ReadHoldingRegisters(Convert.ToInt32(Properties.Settings.Default.DRunningTime), 2);
-                    int[] WaitingTime = _modbus.ReadHoldingRegisters(Convert.ToInt32(Properties.Settings.Default.DWaitingTime), 2);
-                    int[] errTime = _modbus.ReadHoldingRegisters(Convert.ToInt32(Properties.Settings.Default.DerrTime), 2);
-                    int[] raw_Barcode = _modbus.ReadHoldingRegisters(Convert.ToInt32(Properties.Settings.Default.DerrTime), 2);
+                    status = _modbus.ReadHoldingRegisters(Convert.ToInt32(Properties.Settings.Default.Dstatus), 1);
+                    statusCode = _modbus.ReadHoldingRegisters(Convert.ToInt32(Properties.Settings.Default.DstatusCode), 1);
+                    passQty = _modbus.ReadHoldingRegisters(Convert.ToInt32(Properties.Settings.Default.DpassQty), 1);
+                    failQty = _modbus.ReadHoldingRegisters(Convert.ToInt32(Properties.Settings.Default.DfailQty), 1);
+                    errorCnt = _modbus.ReadHoldingRegisters(Convert.ToInt32(Properties.Settings.Default.DerrorCnt), 1);
+                    selfCheck = _modbus.ReadHoldingRegisters(Convert.ToInt32(Properties.Settings.Default.DselfCheck), 1);
+                    cycleTime = _modbus.ReadHoldingRegisters(Convert.ToInt32(Properties.Settings.Default.DcycleTime), 2);
+                    RunningTime = _modbus.ReadHoldingRegisters(Convert.ToInt32(Properties.Settings.Default.DrunningTime), 2);
+                    WaitingTime = _modbus.ReadHoldingRegisters(Convert.ToInt32(Properties.Settings.Default.DwaitingTime), 2);
+                    errTime = _modbus.ReadHoldingRegisters(Convert.ToInt32(Properties.Settings.Default.DerrTime), 2);
+
+
+                    if (Properties.Settings.Default.EnableMES == true)
+                    {
+                        raw_Barcode = _modbus.ReadHoldingRegisters(Convert.ToInt32(Properties.Settings.Default.DerrTime), 9);
+                        Barcode = _Tool.ConvertArrayIntToAsciiText(raw_Barcode);
+                        _Common.iPQM_Barcode = Barcode;
+                        //Console.WriteLine("Enable MES" + _Common.iPQM_Barcode + "##");
+                    }
 
                     /*
                     int CycleTmr1 = cycleTime[0];
@@ -122,8 +180,6 @@ namespace Prototype_App
                     uint DWWaitingTime = _Tool.combineWord(WaitingTime[0], WaitingTime[1]);
                     uint DWerrTime = _Tool.combineWord(errTime[0], errTime[1]);
 
-                    string Barcode = _Tool.ConvertArrayIntToAsciiText(raw_Barcode);
-
                     _Common.iPQM_Status = status[0];
                     _Common.iPQM_Status_Code = Convert.ToString(statusCode[0]);
                     _Common.iPQM_PassQty = passQty[0];
@@ -134,8 +190,12 @@ namespace Prototype_App
                     _Common.iPQM_Running_Time = DWRunningTime;
                     _Common.iPQM_Waiting_Time = DWWaitingTime;
                     _Common.iPQM_Error_Time = DWerrTime;
-                    _Common.iPQM_Barcode = Barcode;
 
+                }
+                else 
+                {
+                    _Common.iPLCconnectStatus = "Disconnect!!";
+                    StopReadStatusThread();
 
                 }
             }
